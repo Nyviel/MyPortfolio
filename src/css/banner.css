@@ -1,0 +1,142 @@
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+	overflow: hidden;
+	width: 55%;
+	height: 55%;
+	padding: 1rem;
+	border-radius: 10px;
+	box-shadow: 0 0rem 3rem 0.5rem black;
+	background-color: var(--clr-bg);
+	color: white;
+}
+
+.card::before {
+	content: "";
+	position: absolute;
+
+	width: 200%;
+	aspect-ratio: 1 / 1;
+
+	background: repeating-conic-gradient(transparent 10%, magenta 60%);
+
+	animation: animate-border 2.5s linear infinite;
+}
+
+@keyframes animate-border {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.card::after {
+	content: "";
+	position: absolute;
+	inset: 3px;
+	border-radius: 10px;
+
+	background-color: var(--clr-card-bg);
+}
+
+.circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateX(-50%) translateY(-50%);
+
+	width: 200px;
+	aspect-ratio: 1 / 1;
+	display: none;
+
+	background-color: magenta;
+	filter: blur(15rem);
+	z-index: 10;
+}
+
+.circle.in {
+	display: block;
+}
+
+.card__content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	z-index: 10;
+}
+
+.content__name {
+	font-size: 4rem;
+}
+
+.content__role {
+	margin-top: 0.5rem;
+	color: rgb(195, 169, 243);
+	font-size: 2.5rem;
+}
+
+.content__description {
+	margin-top: 3rem;
+	font-size: 1.25rem;
+}
+
+.btn {
+	border: none;
+
+	margin-top: 2rem;
+	width: 175px;
+	padding: 16px 16px;
+	border-radius: 15px;
+	color: white;
+	background-color: #682ed1;
+	transition-duration: 1s;
+	font-weight: bold;
+}
+
+.btn:hover,
+.btn:focus {
+	transform: scale(1.1);
+	filter: brightness(120%);
+	outline: 4px solid hotpink;
+}
+
+.card__glow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateX(-50%) translateY(-50%);
+
+	width: 200px;
+	aspect-ratio: 1 / 1;
+
+	background-color: magenta;
+	filter: blur(15rem);
+	z-index: 10;
+}
+
+.banner-border {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	fill: var(--clr-card-bg);
+	transform: rotateX(180deg);
+}

@@ -1,0 +1,89 @@
+.projects {
+	text-align: center;
+	overflow: hidden;
+
+	min-height: fit-content;
+	padding-bottom: 10rem;
+}
+
+.projects h2 {
+	color: white;
+	font-size: 2.5rem;
+	padding: 3rem 0 10rem 0;
+}
+
+.projects__wrapper {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	gap: 3rem;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.project {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-inline: auto;
+
+	width: 70%;
+	height: 100%;
+	outline: 2px solid hotpink;
+
+	transition-duration: 0.25s;
+	transition-delay: 0ms;
+}
+
+.project__image {
+	height: 100%;
+}
+
+.project img {
+	height: 100%;
+}
+
+.project:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.project:focus-within {
+	outline: 4px solid hotpink;
+}
+
+.image__title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	opacity: 0;
+	color: white;
+	padding: 15px;
+	font-size: 2.5rem;
+	text-shadow: 0 0 1.5rem hotpink;
+	z-index: 10;
+}
+
+.project .darken {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.65);
+	opacity: 0;
+}
+
+.project:hover .image__title,
+.project:focus .image__title {
+	opacity: 1;
+	filter: brightness(200%);
+	outline: 4px solid hotpink;
+}
+
+.project:hover .darken,
+.project:focus .darken {
+	opacity: 1;
+}

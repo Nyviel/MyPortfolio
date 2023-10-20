@@ -1,0 +1,85 @@
+@import url(./reset.css);
+@import url(./navigation.css);
+@import url(./banner.css);
+@import url(./experience.css);
+@import url(./projects.css);
+@import url(./skills.css);
+@import url(./learning.css);
+@import url(./contact.css);
+@import url(./links.css);
+@import url(./footer.css);
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+:root {
+	--clr-bg: rgb(46 16 101);
+	--clr-card-bg: rgb(58, 10, 146);
+}
+
+.body,
+html {
+	height: 100%;
+	background-color: var(--clr-bg);
+	font-family: "Lato", sans-serif;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0, 0, 0, 0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
+
+.hidden-left {
+	opacity: 0;
+	transform: translateX(100%);
+	filter: blur(5px);
+	transition: all 1s;
+}
+
+.hidden-right {
+	opacity: 0;
+	transform: translateX(-100%);
+	filter: blur(5px);
+	transition: all 1s;
+}
+
+.hidden-bottom {
+	opacity: 0;
+	transform: translateY(100%);
+	filter: blur(5px);
+	transition: all 1s;
+}
+
+.show {
+	opacity: 1;
+	transform: translateX(0%);
+
+	filter: blur(0);
+}
+
+.separator {
+	background: url("/separator.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 150px;
+}
+
+.flip {
+	rotate: 180deg;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.hidden {
+		transition: none;
+	}
+}
+
+hr {
+	color: hotpink;
+}

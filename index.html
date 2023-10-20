@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="src/css/style.css" />
+		<title>Przemek Kaczmarski</title>
+	</head>
+	<body>
+		<ul class="particles"></ul>
+		<header class="primary-header">
+			<button
+				class="mobile-hamburger"
+				aria-controls="primary-navigation"
+				aria-expanded="false"
+			>
+				<img
+					class="icon-hamburger"
+					src="./src/images/icon-hamburger.svg"
+					alt=""
+					aria-hidden="true"
+				/>
+				<img
+					class="icon-close"
+					src="./src/images/icon-close.svg"
+					alt=""
+					aria-hidden="true"
+				/>
+				<span class="visually-hidden">Menu</span>
+			</button>
+			<nav class="primary-navigation">
+				<ul
+					id="primary-navigation"
+					role="list"
+					class="nav-list"
+					aria-label="primary navigation"
+				>
+					<li id="banner">About Me</li>
+					<li id="experiences">Experience</li>
+					<li id="projects">Projects</li>
+					<li id="skills">Skills</li>
+					<li id="learning">Learning</li>
+					<li id="contact">Contact Me</li>
+					<li id="links">My Links</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="banner">
+				<div class="card" tabindex="0">
+					<div class="card__glow"></div>
+					<div class="card__glow" style="top: 100%"></div>
+					<div class="card__glow" style="left: 100%"></div>
+					<div class="card__glow" style="top: 100%; left: 100%"></div>
+					<div class="circle"></div>
+					<div class="card__content">
+						<h1 class="content__name">Przemek Kaczmarski</h1>
+						<h2 class="content__role">Web Developer</h2>
+						<p class="content__description">
+							I'm a web developer and I enjoy creating aesthethic
+							websites and all things webdev oriented.
+						</p>
+						<button class="btn">Contact me</button>
+					</div>
+				</div>
+			</section>
+
+			<div class="separator flip"></div>
+
+			<section class="experiences">
+				<div class="experience hidden-left" tabindex="0">
+					<h2 class="experience__role">
+						Frontend Developer at Comarch
+					</h2>
+					<p class="experience__duration">(06.2021 - 12.2021)</p>
+					<p class="experience__description">
+						At Comarch I started with a short internship and quickly
+						moved into a regular position developing new features
+						for projects and working on \ maintaining existing
+						projects.
+					</p>
+					<div class="experience__tasks">
+						<p>Chosen tasks I was carrying out:</p>
+						<ul class="tasks__list">
+							<li>
+								Writing new services and components in Angular.
+							</li>
+							<li>Rewriting old features into Angular.</li>
+							<li>Creating frontend views with UX mock-ups.</li>
+							<li>Fixing bugs in existing services.</li>
+						</ul>
+					</div>
+
+					<div class="experience__stack">
+						<p>Technologies used:</p>
+						<ul class="stack__tech">
+							<li>Angular</li>
+							<li>JS</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>Docker</li>
+							<li>RxJS</li>
+							<li>PostgreSQL</li>
+							<li>Spring Boot</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="projects">
+				<h2>My projects</h2>
+				<div class="projects__wrapper">
+					<div class="project hidden-right">
+						<div class="project__image">
+							<a
+								href="https://eciric.github.io/fylo-landing-page/"
+							>
+								<p class="image__title">Fylo landing page</p>
+								<img
+									src="./src/images/fylo.png"
+									alt="Fylo landing page"
+								/>
+								<div class="darken"></div>
+							</a>
+						</div>
+					</div>
+					<div class="project hidden-left">
+						<div class="project__image">
+							<a
+								href="https://github.com/Eciric/ip-address-tracker"
+							>
+								<p class="image__title">IP Address Tracker</p>
+								<img
+									src="./src/images/ip-address-tracker.png"
+									alt="IP Address Tracker"
+								/>
+								<div class="darken"></div>
+							</a>
+						</div>
+					</div>
+					<div class="project hidden-right">
+						<div class="project__image">
+							<a
+								href="https://eciric.github.io/manage-landing-page/"
+							>
+								<p class="image__title">Manage landing page</p>
+								<img
+									src="./src/images/manage.png"
+									alt="Manage landing page"
+								/>
+								<div class="darken"></div>
+							</a>
+						</div>
+					</div>
+					<div class="project hidden-left">
+						<a
+							href="https://eciric.github.io/loopstudios-landing-page/"
+						>
+							<p class="image__title">Loopstudios landing page</p>
+							<img
+								src="./src/images/Loopstudios.png"
+								alt="Loopstudios landing page"
+							/>
+							<div class="darken"></div>
+						</a>
+					</div>
+					<div class="project hidden-right">
+						<div class="project__image">
+							<a href="https://eciric.github.io/todo-app-main/">
+								<p class="image__title">Todo app page</p>
+								<img
+									src="./src/images/todo-app.png"
+									alt="Todo app page"
+								/>
+								<div class="darken"></div>
+							</a>
+						</div>
+					</div>
+					<div class="project hidden-left">
+						<div class="project__image">
+							<a href="https://github.com/Eciric/Recipe-Book">
+								<p class="image__title">Recipe Book</p>
+								<img
+									src="./src/images/recipebook.png"
+									alt="recipe book"
+								/>
+								<div class="darken"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="skills">
+				<h2>Tech stack I work with</h2>
+				<ul class="skills__list">
+					<li class="hidden-left" tabindex="0">
+						<img src="./src/images/angular.png" alt="Angular" />
+					</li>
+					<li class="hidden-left" tabindex="0">
+						<img
+							src="./src/images/javascript.png"
+							alt="Javascript"
+						/>
+					</li>
+					<li class="hidden-left" tabindex="0">
+						<img src="./src/images/html.png" alt="html" />
+					</li>
+					<li class="hidden-right" tabindex="0">
+						<img src="./src/images/css.png" alt="css" />
+					</li>
+					<li class="hidden-right" tabindex="0">
+						<img src="./src/images/postgres.png" alt="postgres" />
+					</li>
+					<li class="hidden-right" tabindex="0">
+						<img
+							src="./src/images/typescript.png"
+							alt="typescript"
+						/>
+					</li>
+				</ul>
+			</section>
+
+			<section class="learning">
+				<h2>Tech stack I'm currently learning</h2>
+				<ul class="learning__list">
+					<li class="hidden-left" tabindex="0">
+						<img src="./src/images/angular.png" alt="angular" />
+					</li>
+					<li class="hidden-left" tabindex="0">
+						<img src="./src/images/bootstrap.png" alt="bootstrap" />
+					</li>
+					<li class="hidden-left" tabindex="0">
+						<img src="./src/images/vite.png" alt="vite" />
+					</li>
+				</ul>
+			</section>
+
+			<div class="separator"></div>
+
+			<section class="contact">
+				<div class="contact__wrapper" tabindex="0">
+					<div class="email-image"></div>
+					<div class="card__glow"></div>
+					<div class="card__glow" style="top: 100%"></div>
+					<div class="card__glow" style="left: 100%"></div>
+					<div class="card__glow" style="top: 100%; left: 100%"></div>
+					<h2>Interested? Reach out here</h2>
+					<a href="mailto:przemyslaw.kaczmarski11@gmail.com">
+						<button class="btn">Contact me</button>
+					</a>
+				</div>
+				<div class="particles-center"></div>
+			</section>
+
+			<div class="separator flip"></div>
+
+			<section class="links">
+				<h2>My links</h2>
+				<ul>
+					<li>
+						<a href="https://github.com/Eciric/"
+							><img
+								src="./src/images/github.png"
+								alt="github logo"
+						/></a>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/przemysław-kaczmarski-87061520a"
+							><img
+								src="./src/images/linkedin.png"
+								alt="linkedin logo"
+						/></a>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer class="footer" tabindex="0">
+			<div class="footer__wrapper">
+				<h3>Przemek Kaczmarski 2023 &#169;</h3>
+			</div>
+		</footer>
+		<script type="module" src="/src/js/main.js"></script>
+		<script defer type="module" src="/src/js/animate.js"></script>
+	</body>
+</html>

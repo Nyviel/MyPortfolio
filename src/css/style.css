@@ -62,7 +62,7 @@ html {
 }
 
 .separator {
-	background: url("/separator.svg");
+	background: url("/src/images/separator.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;

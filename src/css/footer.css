@@ -13,5 +13,5 @@ footer {
 }
 
 .footer__wrapper > h3 {
-	font-size: 2rem;
+	font-size: clamp(1.15rem, 5vw, 2rem);
 }

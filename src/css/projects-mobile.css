@@ -1,0 +1,21 @@
+@media (width < 1000px) {
+	.projects__wrapper {
+		gap: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.projects h2 {
+		padding: 3rem 0;
+	}
+
+	.project {
+		width: 90%;
+	}
+
+	.project__github {
+		padding: 3rem 1rem 1rem 1rem;
+	}
+}

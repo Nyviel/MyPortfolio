@@ -1,0 +1,11 @@
+@media (width < 1350px) {
+	.experiences {
+		margin-top: 2rem;
+		padding: 1rem;
+	}
+
+	.experience {
+		height: fit-content;
+		padding: 2rem;
+	}
+}

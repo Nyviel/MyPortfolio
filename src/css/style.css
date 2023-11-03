@@ -1,10 +1,14 @@
 @import url(./reset.css);
 @import url(./navigation.css);
+@import url(./navigation-mobile.css);
 @import url(./banner.css);
+@import url(./banner-mobile.css);
 @import url(./experience.css);
+@import url(./experience-mobile.css);
 @import url(./projects.css);
+@import url(./projects-mobile.css);
 @import url(./skills.css);
-@import url(./learning.css);
+@import url(./skills-mobile.css);
 @import url(./contact.css);
 @import url(./links.css);
 @import url(./footer.css);
@@ -47,7 +51,7 @@ html {
 	transition: all 1s;
 }
 
-.hidden-bottom {
+.hidden-up {
 	opacity: 0;
 	transform: translateY(100%);
 	filter: blur(5px);
@@ -82,4 +86,8 @@ html {
 
 hr {
 	color: hotpink;
+}
+
+.btn:hover {
+	cursor: pointer;
 }

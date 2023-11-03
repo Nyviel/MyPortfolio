@@ -62,15 +62,31 @@
 
 .contact__wrapper > h2 {
 	font-size: 2rem;
-	padding-bottom: 3rem;
+	text-shadow: 0 0 0.5em white;
+	width: 20ch;
+	text-align: center;
+}
+
+.contact__wrapper > h3 {
+	font-size: 1.35rem;
+	text-shadow: 0 0 0.25em white;
+	text-align: center;
+	padding: 3rem 0 0.35rem 0;
+}
+
+.contact__wrapper > p {
+	font-size: 1.15rem;
+	text-decoration: underline;
+	text-shadow: 0 0 0.25em white;
+	text-align: center;
 }
 
 .email-image {
 	position: absolute;
 	inset: 0;
 	background: url("../images/email.png");
-	background-position: left;
-	background-size: 60%;
+	background-position: center;
+	background-size: 70%;
 	background-repeat: no-repeat;
-	transform: rotate(30deg);
+	rotate: -45deg;
 }

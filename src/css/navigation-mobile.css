@@ -1,0 +1,5 @@
+@media (width < 800px) {
+	.primary-header[data-visible] .nav-list {
+		margin-top: 2rem;
+	}
+}

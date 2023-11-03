@@ -18,6 +18,7 @@
 	height: 55%;
 	padding: 1rem;
 	border-radius: 10px;
+
 	box-shadow: 0 0rem 3rem 0.5rem black;
 	background-color: var(--clr-bg);
 	color: white;
@@ -85,18 +86,20 @@
 }
 
 .content__name {
-	font-size: 4rem;
+	font-size: clamp(1rem, 10vw, 4rem);
+	text-shadow: 0 0 0.25em white;
 }
 
 .content__role {
 	margin-top: 0.5rem;
 	color: rgb(195, 169, 243);
-	font-size: 2.5rem;
+	font-size: clamp(1rem, 4vw, 2.5rem);
+	text-shadow: 0 0 0.25em rgb(192, 100, 180);
 }
 
 .content__description {
 	margin-top: 3rem;
-	font-size: 1.25rem;
+	font-size: clamp(0.8rem, 2vw, 1.25rem);
 }
 
 .btn {

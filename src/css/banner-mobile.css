@@ -1,0 +1,31 @@
+@media (width < 1350px) {
+	.card {
+		width: 95%;
+		height: fit-content;
+		padding: 0.25rem;
+		text-align: center;
+		background: rgba(46, 16, 101, 0.8);
+	}
+
+	.card::before {
+		display: none;
+	}
+
+	.card::after {
+		display: none;
+	}
+
+	.card__glow {
+		display: none;
+	}
+}
+
+@media (width < 450px) {
+	.banner {
+		align-items: start;
+	}
+
+	.card {
+		margin-top: 5rem;
+	}
+}

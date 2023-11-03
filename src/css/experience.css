@@ -3,12 +3,12 @@
 	justify-content: flex-start;
 	align-items: center;
 
-	margin-top: 10rem;
+	margin-top: 2rem;
 
 	width: 100%;
-	height: 80vh;
+	height: fit-content;
 
-	padding: 10rem;
+	padding: 6rem;
 
 	color: white;
 
@@ -39,8 +39,14 @@
 }
 
 .experience__role {
-	font-size: 2.5rem;
+	font-size: clamp(1.25rem, 5vw, 2.5rem);
 	font-weight: 600;
+}
+
+.experience__company {
+	font-size: clamp(1.1rem, 5vw, 1.75rem);
+	font-weight: lighter;
+	color: hotpink;
 }
 
 .experience__duration {
@@ -49,7 +55,7 @@
 	font-weight: lighter;
 	color: rgb(195, 169, 243);
 
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 
 .experience__description {

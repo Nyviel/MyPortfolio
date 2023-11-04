@@ -1,0 +1,12 @@
+@media (width < 600px) {
+	.links img {
+		width: 150px;
+	}
+	.links > h2 {
+		padding: 2rem 1rem;
+	}
+	.links {
+		padding: 4rem 2rem;
+		height: fit-content;
+	}
+}

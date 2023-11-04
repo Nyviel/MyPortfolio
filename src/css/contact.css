@@ -75,7 +75,7 @@
 }
 
 .contact__wrapper > p {
-	font-size: 1.15rem;
+	font-size: clamp(0.9rem, 5vw, 1.15rem);
 	text-decoration: underline;
 	text-shadow: 0 0 0.25em white;
 	text-align: center;

@@ -1,0 +1,19 @@
+@media (width < 1000px) {
+	.learning__list {
+		grid-template-columns: 1fr;
+	}
+
+	.learning__list > li {
+		padding: 1rem;
+	}
+
+	.learning__list > li > img {
+		width: 30%;
+	}
+}
+
+@media (width < 600px) {
+	.learning__list > li > img {
+		width: 50%;
+	}
+}

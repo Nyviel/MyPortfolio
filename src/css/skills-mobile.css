@@ -8,12 +8,16 @@
 	}
 
 	.skills__list > li > img {
-		width: 70%;
+		width: 50%;
 	}
 }
 
 @media (width < 600px) {
 	.skills__list {
 		grid-template-columns: 1fr;
+	}
+
+	.skills__list > li > img {
+		width: 40%;
 	}
 }

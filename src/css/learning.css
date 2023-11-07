@@ -1,0 +1,45 @@
+.learning {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	height: fit-content !important;
+}
+.learning > h2 {
+	color: white;
+	font-size: 3rem;
+}
+.learning__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	color: white;
+	list-style: none;
+}
+.learning__list > li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 5rem;
+}
+.learning__list > li:nth-child(2) {
+	transition-delay: 200ms;
+}
+.learning__list > li:nth-child(3) {
+	transition-delay: 300ms;
+}
+.learning__list > li:nth-child(4) {
+	transition-delay: 500ms;
+}
+.learning__list > li:nth-child(5) {
+	transition-delay: 400ms;
+}
+.learning__list > li:nth-child(6) {
+	transition-delay: 300ms;
+}
+.learning__list > li > img {
+	width: 250px;
+	aspect-ratio: 1;
+}

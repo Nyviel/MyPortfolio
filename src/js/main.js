@@ -72,7 +72,8 @@ document
 	});
 
 window.onloadTurnstileCallback = function () {
-	turnstile.render("#cf-turnstile", {
+	const cfTurnstile = document.querySelector(".cf-turnstile");
+	turnstile.render(cfTurnstile, {
 		sitekey: `${import.meta.env.VITE_SITE_KEY}`,
 		callback: function (token) {
 			console.log(`Challenge Success ${token}`);

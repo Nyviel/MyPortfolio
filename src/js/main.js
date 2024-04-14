@@ -2,7 +2,6 @@ import "../sass/particles.scss";
 import "../sass/particles-center.scss";
 const circle = document.querySelector(".circle");
 const card = document.querySelector(".card");
-const bannerBorder = document.querySelector(".banner-border");
 const hamburgerButton = document.querySelector(".mobile-hamburger");
 const primaryHeader = document.querySelector(".primary-header");
 const iconHamburger = document.querySelector(".icon-hamburger");
@@ -70,13 +69,3 @@ document
 			document.querySelector("." + element.id)?.scrollIntoView();
 		});
 	});
-
-window.onloadTurnstileCallback = function () {
-	const cfTurnstile = document.querySelector(".cf-turnstile");
-	turnstile.render(cfTurnstile, {
-		sitekey: `${import.meta.env.VITE_SITE_KEY}`,
-		callback: function (token) {
-			console.log(`Challenge Success ${token}`);
-		},
-	});
-};

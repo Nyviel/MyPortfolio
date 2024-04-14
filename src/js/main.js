@@ -70,3 +70,12 @@ document
 			document.querySelector("." + element.id)?.scrollIntoView();
 		});
 	});
+
+window.onloadTurnstileCallback = function () {
+	turnstile.render("#cf-turnstile", {
+		sitekey: `${import.meta.env.VITE_SITE_KEY}`,
+		callback: function (token) {
+			console.log(`Challenge Success ${token}`);
+		},
+	});
+};

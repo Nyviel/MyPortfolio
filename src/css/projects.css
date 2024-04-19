@@ -35,7 +35,6 @@
 
 	width: 70%;
 	height: 100%;
-	outline: 2px solid hotpink;
 
 	transition-duration: 0.25s;
 	transition-delay: 0ms;
@@ -43,6 +42,9 @@
 
 .project__content {
 	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+	outline: 2px solid hotpink;
 }
 
 .project__github {
@@ -67,10 +69,11 @@
 }
 
 .project__image {
-	width: auto;
+	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	overflow-x: hidden;
+	border-radius: 10px;
 }
 
 .project:hover {
@@ -107,6 +110,7 @@
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.9);
 	opacity: 0;
+	border-radius: 10px;
 }
 
 .project:hover .image__title,

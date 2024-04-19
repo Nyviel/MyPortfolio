@@ -84,7 +84,7 @@
 .email-image {
 	position: absolute;
 	inset: 0;
-	background: url("../images/email.png");
+	background: url("../images/email.webp");
 	background-position: center;
 	background-size: 70%;
 	background-repeat: no-repeat;
